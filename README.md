@@ -15,12 +15,11 @@ All data were derived from the TCGA-BRCA project and processed to ensure consist
 ---
 
 ### Clinical Data Files
-- **`data_clinical_patient.txt`**  
-  Patient-level clinical data, including demographic information, vital status, disease-free survival, and pathological staging variables.
-
-- **`data_clinical_sample.txt`**  
-  Sample-level clinical and pathological data, including tumor characteristics, diagnostic procedures, and treatment-related information.
-
+- **`data_clinical_patient.txt`**
+- **`data_clinical_sample.txt`**
+- **`data_timeline_diagnosis.txt`**  
+- **`data_timeline_treatment.txt`**
+- 
 ---
 
 ### Metadata and Supplementary Files
@@ -30,19 +29,21 @@ All data were derived from the TCGA-BRCA project and processed to ensure consist
 - **`excluded_variables_and_justifications.txt`**  
   Detailed description of variables that were excluded from the analysis, along with the rationale for their removal (e.g., lack of variability, identifiers, or misalignment with study objectives).
 
-- **`meta_timeline_diagnosis.txt`**  
-  Metadata related to diagnosis timeline events extracted from the TCGA clinical data.
+- **`meta_clinical_patient.txt`**  
 
-- **`meta_timeline_treatment.txt`**  
-  Metadata related to treatment timeline events extracted from the TCGA clinical data.
-
+- **`meta_clinical_sample.txt`**
+- 
+- **`meta_timeline_diagnosis.txt`**
+  
+- **`meta_timeline_treatment.txt`**
+- 
 ---
 
 ## Data Processing and Analysis
 
 The data were cleaned and harmonized prior to analysis. Categorical variables with no variability or excessive missing values were excluded, while relevant clinical, pathological, and molecular variables were retained based on the study objectives.
 
-Multinomial logistic regression models were used to evaluate associations between molecular subtypes and clinical-pathological variables. Model diagnostics included likelihood ratio tests, pseudo-R² measures, residual analyses, multicollinearity assessment, cross-validation, and goodness-of-fit evaluation.
+Multinomial logistic regression models were used to evaluate associations between molecular subtypes and clinical-pathological variables. 
 
 ---
 
