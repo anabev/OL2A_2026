@@ -62,6 +62,11 @@ This repository was created to support transparency and reproducibility and is i
 
 ## Authors
 
-Ana Beatriz Miranda Valentin (PhD Student)  
-Glaucia Maria Bressan (PhD)  
-Elisângela Ap. da Silva Lizzi (PhD)
+- **Ana Beatriz Miranda Valentin** (PhD Student)  
+  anabvalentin@outlook.com.br
+
+- **Glaucia Maria Bressan** (PhD)  
+  glauciabressan@utfpr.edu.br
+
+- **Elisângela Ap. da Silva Lizzi** (PhD)  
+  elisangelalizzi@gmail.com
