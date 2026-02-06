@@ -57,3 +57,11 @@ The data dictionary and supplementary metadata files provide full transparency r
 ## Notes
 
 This repository was created to support transparency and reproducibility and is intended to accompany the associated manuscript.
+
+---
+
+## Authors
+
+Ana Beatriz Miranda Valentin (PhD Student)  
+Glaucia Maria Bressan (PhD)  
+Elisângela Ap. da Silva Lizzi (PhD)
