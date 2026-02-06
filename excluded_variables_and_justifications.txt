@@ -1,0 +1,96 @@
+Excluded Variables and Justifications
+
+This document describes the variables that were excluded from the analysis and the corresponding reasons for their removal. Variables were excluded when they presented no variability across samples, contained only identifiers, or were not aligned with the objectives of the study.
+
+BIOPSY_SITE  
+Excluded because all samples correspond to breast tissue.
+
+ETHNICITY  
+Excluded because all samples were classified as "Not Hispanic or Latino", with the exception of a single sample (A04N), resulting in insufficient variability for analysis.
+
+ICD_10  
+Excluded because all samples shared the same ICD-10 code (C50.9), corresponding to breast cancer.
+
+OTHER_PATIENT_ID  
+Excluded because this variable contains image-related identification codes and does not represent a clinical or biological characteristic.
+
+PRIMARY_SITE_PATIENT  
+Excluded because all samples originated from the breast.
+
+PRIOR_MALIGNANCY  
+Excluded because nearly all samples were classified as FALSE, with the exception of a single case (A1G4), providing insufficient variability.
+
+PRIOR_TREATMENT  
+Excluded because all samples were classified as FALSE.
+
+SEX  
+Excluded because all patients in the dataset are female.
+
+PROJECT_ID  
+Excluded because all samples belong to the same project ("TCGA-BRCA").
+
+PROJECT_NAME  
+Excluded because all samples were labeled as "Invasive Breast Carcinoma".
+
+PROJECT_STATE  
+Excluded because all samples had the same project state ("Released").
+
+SAMPLE_ID  
+Excluded because this variable represents a sample identifier and does not contain analytical information.
+
+IS_FFPE  
+Excluded because all samples were classified as "No".
+
+OTHER_SAMPLE_ID  
+Excluded because this variable represents alternative identification codes unrelated to the analytical objectives.
+
+SAMPLE_TYPE  
+Excluded because all samples were classified as "Primary Tumor".
+
+SAMPLE_TYPE_ID  
+Excluded because all samples had the same identifier value ("1").
+
+ONCOTREE_CODE  
+Excluded because all samples shared the same OncoTree code ("BRCA").
+
+CANCER_TYPE  
+Excluded because all samples were classified as "Invasive Breast Carcinoma".
+
+CANCER_TYPE_DETAILED  
+Excluded because all samples were classified as "Invasive Breast Carcinoma".
+
+START_DATE.x  
+Excluded because all values were recorded as zero.
+
+STOP_DATE.x  
+Excluded because all values were missing (NA).
+
+EVENT_TYPE.x  
+Excluded because all samples were classified as "Diagnosis".
+
+GRADE  
+Excluded because all values were missing (NA).
+
+EVENT_TYPE.y  
+Excluded because all samples were classified as "Treatment".
+
+NUMBER_OF_CYCLES  
+Excluded because all samples reported the same number of cycles (4).
+
+THERAPEUTIC_AGENT  
+Excluded by study design, as individual medications were intentionally not considered in the analysis.
+
+TREATMENT_ANATOMIC_SITE  
+Excluded because all values were missing (NA).
+
+TREATMENT_EFFECT  
+Excluded because all values were missing (NA).
+
+TREATMENT_END_REASON  
+Excluded because all values were missing (NA).
+
+TREATMENT_OUTCOME  
+Excluded because all samples were classified as "Complete Response".
+
+TREATMENT_TYPE  
+Excluded because most patients received more than one type of treatment. Instead, the variable "NUMBER_TREATMENT_TYPE" was created to represent the total number of different treatment modalities received by each patient.

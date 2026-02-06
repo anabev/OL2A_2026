@@ -1,0 +1,123 @@
+DATA DICTIONARY
+Study: Breast Cancer Molecular Subtypes Analysis
+
+--------------------------------------------------------------------
+TARGET VARIABLE
+--------------------------------------------------------------------
+
+Variable name: SUBTYPE
+Description: Breast cancer molecular subtype classification.
+Type: Categorical (multinomial)
+Categories:
+  - LumA (reference category)
+  - LumB
+  - Her2
+  - Basal
+  - Normal-like
+
+--------------------------------------------------------------------
+CATEGORICAL VARIABLES
+--------------------------------------------------------------------
+
+Variable name: PATH_T_STAGE_AGRUPADO
+Description: Pathological T stage, representing the size and local extent of the primary tumor according to the TNM classification system.
+Type: Categorical (ordinal)
+Categories:
+  - T1: Small, localized primary tumor
+  - T2: Intermediate tumor size
+  - T3: Large tumor with local extension
+  - T4: Tumor with direct extension to chest wall or skin
+Notes: Original T subcategories (e.g., T1b, T1c) were grouped to ensure analytical consistency.
+
+--------------------------------------------------------------------
+
+Variable name: PATH_N_STAGE_AGRUPADO
+Description: Pathological N stage, indicating the extent of regional lymph node involvement according to the TNM system.
+Type: Categorical (ordinal)
+Categories:
+  - N0: No regional lymph node metastasis (including N0(i-) and N0(i+))
+  - N1: Limited lymph node involvement
+  - N2: Moderate lymph node involvement
+  - N3: Extensive lymph node involvement
+Notes: N0 category includes both N0(i-) and N0(i+) to improve sample distribution.
+
+--------------------------------------------------------------------
+
+Variable name: PATH_M_STAGE
+Description: Pathological M stage, indicating the presence or absence of distant metastases.
+Type: Categorical (binary)
+Categories:
+  - M0: No evidence of distant metastasis
+  - M1: Presence of distant metastasis
+
+--------------------------------------------------------------------
+
+Variable name: PRIMARY_DIAGNOSIS
+Description: Histological classification of the primary breast tumor.
+Type: Categorical (nominal)
+Categories:
+  - Infiltrating Ductal Carcinoma
+  - Infiltrating Lobular Carcinoma
+  - Metaplastic Carcinoma
+  - Mucinous Carcinoma
+  - Other
+
+--------------------------------------------------------------------
+
+Variable name: VITAL_STATUS
+Description: Patient vital status at the last available follow-up.
+Type: Categorical (binary)
+Categories:
+  - Alive
+  - Dead
+
+--------------------------------------------------------------------
+
+Variable name: DFS_STATUS
+Description: Disease-Free Survival status indicating recurrence or progression after initial treatment.
+Type: Categorical (binary)
+Categories:
+  - Disease-Free: No recurrence or progression observed
+  - Recurred/Progressed: Evidence of disease recurrence or progression
+
+--------------------------------------------------------------------
+
+Variable name: METHOD_OF_DIAGNOSIS
+Description: Diagnostic procedure used to obtain tumor tissue for pathological confirmation.
+Type: Categorical (nominal)
+Categories:
+  - Core Biopsy
+  - Excisional Biopsy
+  - Biopsy
+  - Fine Needle Aspiration
+
+--------------------------------------------------------------------
+NUMERICAL VARIABLES
+--------------------------------------------------------------------
+
+Variable name: AGE
+Description: Patient age at the time of initial diagnosis or sample collection.
+Type: Numerical (continuous)
+Unit: Years
+
+--------------------------------------------------------------------
+
+Variable name: TMB_NONSYNONYMOUS
+Description: Non-synonymous Tumor Mutational Burden, defined as the number of non-synonymous somatic mutations per megabase of coding DNA.
+Type: Numerical (continuous)
+Unit: Mutations per megabase (mut/Mb)
+
+--------------------------------------------------------------------
+
+Variable name: NUMBER_TREATMENT_TYPE
+Description: Total number of distinct therapeutic modalities received by the patient throughout treatment.
+Type: Numerical (discrete)
+Unit: Count
+
+--------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------
+
+- Variables were selected based on clinical relevance and alignment with the study objectives.
+- Some original dataset variables were excluded due to missing data, low variability, or lack of relevance to the proposed analysis.
+- Detailed justification for variable inclusion and exclusion is provided in the accompanying documentation and analysis scripts.
