@@ -19,7 +19,7 @@ All data were derived from the TCGA-BRCA project and processed to ensure consist
 - **`data_clinical_sample.txt`**
 - **`data_timeline_diagnosis.txt`**  
 - **`data_timeline_treatment.txt`**
-- 
+
 ---
 
 ### Metadata and Supplementary Files
@@ -32,11 +32,11 @@ All data were derived from the TCGA-BRCA project and processed to ensure consist
 - **`meta_clinical_patient.txt`**  
 
 - **`meta_clinical_sample.txt`**
-- 
+  
 - **`meta_timeline_diagnosis.txt`**
   
 - **`meta_timeline_treatment.txt`**
-- 
+  
 ---
 
 ## Data Processing and Analysis
